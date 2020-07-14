@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>7-2</title>
+	<script type="text/javascript">
+	$(document).ready(function(){ 
+var newImage = new Image(); //预载入图片 
+var oldImage = $('img').attr('src'); 
+newImage.src = './images/tc_2.jpg'; 
+$('img').hover(function(){ //鼠标滑过图片切换 
+$('img').attr('src',newImage.src); 
+}, 
+function(){ 
+$('img').attr('src',oldImage); 
+}); 
+}); 
+	</script>
+</head>
+<body>
+<img src="images/tc_1.jpg">
+	
+</body>
+</html>
